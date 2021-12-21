@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploding Bomb</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <h1 id="bomb">💣</h1>
+  <h1 id="explosion" class="hide">💥 </h1>
+  <script>
+    function eventAction () {
+      if(!bomb.classList.contains('big')) {
+        bomb.classList.add('big');
+      } else if (!bomb.classList.contains('bigger')) {
+        bomb.classList.add('bigger');
+      } else if (!bomb.classList.contains('exploded')) {
+         bomb.classList.add('exploded');
+         bomb.style.display = 'none';
+         explosion.style.fontSize = '7em';
+         explosion.style.display = 'block';       
+      }
+    }
+    bomb.onclick = eventAction;
+  </script>
+</body>
+</html>

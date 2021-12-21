@@ -1,0 +1,42 @@
+.green {
+  color: green;
+  text-shadow: 0 0 5px lime;
+}
+.big {
+  font-size: 100px;
+}
+
+.normal {
+  font-size: 3em;
+  text-transform: uppercase;
+  color: rgb(255, 112, 23);
+}
+
+.flash {
+  background: rgb(255, 112, 23);
+  color: rgb(250, 216, 65);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.big {
+  font-size: 5em;
+}
+
+.bigger {
+ font-size: 7em;
+}
+
+#choresList, #myList{
+  cursor: pointer;
+}
+
+.complete {
+  text-decoration: line-through;
+}

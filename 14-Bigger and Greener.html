@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bigger and Greener</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <label for="">
+    <input type="checkbox" id="green">
+    Green
+  </label><br>
+  <label for="">
+    <input type="checkbox" id="big">
+    Big
+  </label>
+  <h1 id="header">Green is good!</h1>
+
+  <script>
+    function myGreenUpdater() {
+      if (green.checked) {
+        header.classList.add('green');
+      } else {
+        header.classList.remove('green');
+      }
+    }
+    function myBigUpdater() {
+      if (big.checked) {
+        header.classList.add('big');
+      } else {
+        header.classList.remove('big');
+      }
+    }
+
+    green.onchange = myGreenUpdater;
+    big.onchange = myBigUpdater;
+  </script>
+</body>
+</html>

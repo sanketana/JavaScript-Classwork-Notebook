@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<label>
+  Student: <input id="student">
+</label>
+
+<h1>Report: <span id="heading"></span></h1>
+
+<p style="width: 300px;">
+  <span id="first">Placeholder</span> is an outstanding student. 
+  I've really appreciated having <span id="second">Placeholder</span> in my class this year.
+  If <span id="third">Placeholder</span> continues to put in effort, I can see great things ahead!
+</p>
+
+<script>
+  function eventHandler() {
+    first.textContent = student.value;
+    second.textContent = student.value;
+    third.textContent = student.value;
+  }
+  
+  student.oninput = eventHandler;
+</script>  
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madlibs</title>
+</head>
+<body>
+  <h1 >Madlibs</h1>
+  <label for="">
+    Name: <br>
+    <input type="text" id="name1">
+  </label><br>
+  <label for="">
+    Another Name: <br>
+    <input type="text" id="name2">
+  </label> <br>
+  <label for="">
+    Planet: <br>
+    <input type="text" id="planet">
+  </label> <br>
+  <label for="">
+    Thing: <br>
+    <input type="text" id="thing">
+  </label> <br>
+  <label for="">
+    Vehicle: <br>
+    <input type="text" id="vehicle">
+  </label> <br>
+  <label for="">
+    Verb: <br>
+    <input type="text" id="verb">
+  </label> <br>
+  <label for="">
+    Animal: <br>
+    <input type="text" id="animal">
+  </label> <br>
+  <label for="">
+    Adjective: <br>
+    <input type="text" id="adjective">
+  </label> <br>
+  <label for="">
+    Place: <br>
+    <input type="text" id="place">
+  </label> <br>
+  <button id="myBtn">
+    Submit
+  </button> 
+  <p>
+    <span id="myName1"></span> and <span id="myName2"></span> went to <span id="myPlanet"></span> in search of <span id="myThing"></span>. They travelled on their <span id="myVehicle"></span>. Once they reached, they started <span id="myVerb"></span> everywhere. Suddenly they were stopped by a <span id="myAnimal"></span>. It was so <span id="myAdjective"></span> that they decided to bring it back to <span id="myPlace"></span>.
+  </p> 
+
+  <script>
+    function madlibGenerator() {
+      myName1.textContent = name1.value;
+      myName2.textContent = name2.value;
+      myPlanet.textContent = planet.value;
+      myThing.textContent = thing.value;
+      myVehicle.textContent = vehicle.value;
+      myVerb.textContent = verb.value;
+      myAnimal.textContent = animal.value;
+      myAdjective.textContent = adjective.value;
+      myPlace.textContent = place.value;
+    }
+
+    myBtn.onclick = madlibGenerator;
+  </script>
+</body>
+</html>
+

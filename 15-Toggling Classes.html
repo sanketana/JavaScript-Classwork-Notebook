@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggling Clases</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="myH1" class="normal">...</h1>
+  <input type="text" id="myInput">
+  
+  <script>
+    function inputAction() {
+      myH1.textContent = myInput.value;
+      if (myH1.classList.contains('flash')) {
+        myH1.classList.remove('flash');
+      } else {
+        myH1.classList.add('flash');
+      }
+    }
+
+    myInput.oninput = inputAction;
+  </script>
+</body>
+</html>

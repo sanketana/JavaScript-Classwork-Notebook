@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-Do List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>My To-Do List</h1>
+    <input type="text" id="myInput">
+    <button id="myBtn">Add</button>
+    <div id="list">
+      <ul id="myList">
+
+      </ul>
+    </div>
+  </div>
+  <script>
+    function addItem() {
+      // here add a new item as child of list
+      var node = document.createElement("li");
+      var textnode = document.createTextNode(myInput.value);
+      node.appendChild(textnode);
+      myList.appendChild(node);
+
+    }
+
+    function markComplete(event) {
+      event.target.classList.toggle('complete');
+    }
+    myBtn.onclick = addItem;
+    myList.onclick = markComplete;
+  </script>
+</body>
+</html>

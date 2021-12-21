@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCQ Quiz</title>
+</head>
+<body>
+  <h1>Quiz Time!</h1>
+  <h3>Q1) Who is the creator of JavaScript?</h3>
+
+  <p>
+    <label for="">
+      <input type="radio" name="q1" id="q1opt1">
+      Guido van Rossum
+    </label>
+  </p>
+
+  <p>
+    <label for="">
+      <input type="radio" name="q1" id="q1opt2">
+      Brendan Eich
+    </label>
+  </p>
+
+  <p>
+    <label for="">
+      <input type="radio" name="q1" id="q1opt3">
+      Linus Torvalds
+    </label>
+  </p>
+
+  <p>
+    <label for="">
+      <input type="radio" name="q1" id="q1opt1">
+      James Gosling
+    </label>
+  </p>
+
+  <button id="myBtn">Check answer</button>
+  <h1 id="result">...</h1>
+
+  <script>
+    function checkAnswer() {
+      if (q1opt2.checked == true) {
+        result.textContent = "Correct!";
+      } else {
+        result.textContent = "Wrong!";
+      }
+    }
+
+    myBtn.onclick = checkAnswer;
+  </script>
+  
+</body>
+</html>

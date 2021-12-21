@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hulk</title>
+</head>
+<body>
+  <h1 id="title">My name is Bruce Banner</h1>
+  <label for="">
+    Gamma Radiation
+    <input type="range" min="400" max="600" value="400" id="gamma">
+  </label> <br>
+  <img src="images/bruce.png" alt="" style="height: 400px;" id="pic">
+
+  <script>
+    function startGamma() {
+      title.textContent = "No, I am The HULK!";
+      pic.src = "images/hulk.png";
+      pic.style.height = gamma.value + 'px';
+    }
+    
+    gamma.onchange = startGamma;
+  </script>
+</body>
+</html>
